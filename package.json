@@ -1,0 +1,20 @@
+{
+  "name": "number_trivia_line_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "functions-framework --target=numberTrivia",
+    "deploy": "gcloud functions deploy numberTrivia --runtime nodejs10 --trigger-http --region=asia-east2 --memory=128"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^1.3.2"
+  }
+}
